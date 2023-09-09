@@ -12,10 +12,10 @@ export class BusinessCard extends Component {
   async getNewApi() {
     try {
       let { data: allData } = await request.get(
-        "top-headlines?country=de&category=business&apiKey=1d6514cbdbd0459db60cab7eb95aa786"
+        "top-headlines?country=de&category=business&apiKey=9685146720c842ee84cdbd0fc6a11420"
       );
       let { data } = await request.get(
-        `top-headlines?country=de&category=business&apiKey=1d6514cbdbd0459db60cab7eb95aa786&page=${this.state.activePage}&pageSize=5`
+        `top-headlines?country=de&category=business&apiKey=9685146720c842ee84cdbd0fc6a11420&page=${this.state.activePage}&pageSize=5`
       );
       this.setState({ newapi: data.articles, total: allData.articles.length });
     } catch (err) {

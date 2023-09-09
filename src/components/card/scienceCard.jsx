@@ -14,7 +14,7 @@ export class ScienceCard extends Component {
   async getNewApi() {
     try {
       let { data } = await request.get(
-        "top-headlines?country=de&category=science&apiKey=1d6514cbdbd0459db60cab7eb95aa786"
+        "top-headlines?country=de&category=science&apiKey=9685146720c842ee84cdbd0fc6a11420"
       ); 
       this.setState({ newapi: data.articles });
     } catch (err) {
